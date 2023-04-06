@@ -1,4 +1,4 @@
-name: Main Branch Workflow
+name: Main Workflow
 
 on:
   push: 
@@ -36,7 +36,7 @@ jobs:
           name: verademo.war
           path: .
       - name: Veracode Upload and Scan Action Step
-        uses: veracode/veracode-uploadandscan-action@master
+        uses: veracode/veracode-uploadandscan-action@0.2.5
         id: upload_and_scan
         with: 
           appname: 'Veracode Github Training'
